@@ -6,6 +6,5 @@ function importText(textFile, onloadfn){
 }
 
 function submitAnswer(answer) {
-  var text = document.createTextNode(answer);
-  document.getElementById('solution').append(text);
+  document.getElementById('solution').innerHTML = answer;
 }
